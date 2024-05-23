@@ -1,0 +1,150 @@
+:root {
+  --dark-blue: #0a0a23;
+  --light-blue: #99c9ff;
+  --grey: #dfdfe2;
+  --white: #ffffff;
+  --black: #000000;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--dark-blue);
+  text-align: center;
+  color: var(--grey);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.container {
+  max-width: max-content;
+}
+
+img#logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: 260px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-block: 30px;
+}
+
+#change-due {
+  width: max-content;
+  margin: 20px auto 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input#cash {
+  padding: 4px 10px;
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+button#purchase-btn {
+  border: 3px solid;
+  border-color: #feac32 #a97221 #a97221 #feac32;
+  background: linear-gradient(to top, #ffad34, #fecb4b);
+  padding: 2px 8px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.total {
+  background-color: var(--black);
+  width: max-content;
+  padding: 4px 30px;
+  margin: 0 auto 32px;
+  border: 10px solid var(--light-blue);
+  font-size: 20px;
+  position: relative;
+  right: 20px;
+}
+
+.total::after {
+  content: "";
+  position: absolute;
+  bottom: -42px;
+  display: block;
+  width: 40px;
+  height: 32px;
+  background-color: var(--light-blue);
+  left: 10px;
+}
+
+.window {
+  background-color: var(--light-blue);
+  padding: 20px 16px 10px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  width: 325px;
+  height: 250px;
+  margin: 10px auto;
+
+  display: flex;
+  gap: 40px;
+}
+
+.keys {
+  width: 90px;
+  height: 70px;
+  background: repeating-linear-gradient(90deg, transparent, transparent 28%, var(--light-blue) 28%, var(--light-blue) 36%), repeating-linear-gradient(var(--black), var(--black) 28%, var(--light-blue) 28%, var(--light-blue) 36%);
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.change {
+  background-color: var(--white);
+  color: var(--black);
+  text-align: left;
+  padding: 10px;
+  overflow: auto;
+}
+
+.change h2 {
+  font-size: 18px;
+}
+
+.change p {
+  font-size: 18px;
+}
+
+.lock {
+  width: 325px;
+  height: 50px;
+  margin-inline: auto;
+  background-color: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--black);
+}
